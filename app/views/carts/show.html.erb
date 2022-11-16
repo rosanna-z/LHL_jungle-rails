@@ -1,6 +1,12 @@
 <section class="cart-show">
 
-  <header class="page-header">
+<% if enhanced_cart.empty? %>
+<header class="page-header">
+<div class="alert alert-warning" role="alert">
+Oops! Looks like you have nothing in your cart.
+Please check out our <a href="/">home page</a> for our products.
+</div>
+  <% else %>
     <h1>My Cart</h1>
   </header>
 
@@ -48,5 +54,5 @@
       <% end %>
     </div>
   </div>
-
+<% end %>
 </section>
