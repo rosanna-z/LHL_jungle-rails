@@ -2,6 +2,10 @@ class OrdersController < ApplicationController
 
   def show
     @order = Order.find(params[:id])
+    @order_line_items = @order.line_items
+    pp @order
+    pp @order_line_items
+    pp @order_line_items[0].product
   end
 
   def create
@@ -9,8 +13,7 @@ class OrdersController < ApplicationController
     order  = create_order(charge)
 
     if order.valid?
-      enhanced_cart
-      update_cart({})
+      empty_cart!
       redirect_to order, notice: 'Your Order has been placed.'
     else
       redirect_to cart_path, flash: { error: order.errors.full_messages.first }
