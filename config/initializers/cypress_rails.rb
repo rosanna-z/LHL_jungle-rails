@@ -41,5 +41,6 @@ end
 private
 
 def open_asset(file_name)
+  # replicated to properly load the seed images.
   File.open(Rails.root.join('db', 'seed_assets', file_name))
 end
