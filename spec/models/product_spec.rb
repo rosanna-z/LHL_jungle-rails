@@ -5,7 +5,7 @@ RSpec.describe Product, type: :model do
   describe 'Validations' do
     before do
       @category = Category.create(name: "Flowers")
-      @product = Product.new(name: "Roses", price: 5000, quantity: 1, category: @category)
+      @product = Product.new(name: "Roses", price_cents: 5000, quantity: 1, category: @category)
     end
 
     context 'given a product name, price, quantity, and category' do
@@ -19,7 +19,7 @@ RSpec.describe Product, type: :model do
         expect(@product.errors.full_messages).to include("Name can't be blank")
       end
       it 'validates the product is not valid when price is not present' do
-        @product.price = nil
+        @product.price_cents = nil
         @product.save
         expect(@product).to_not be_valid
         expect(@product.errors.full_messages).to include("Price can't be blank")
