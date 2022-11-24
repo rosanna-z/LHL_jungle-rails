@@ -8,11 +8,11 @@ RSpec and Cypress was used as a testing tool.
 
 ## Screenshots
 
-!["View the Products Page as a customer"]()
+!["View the Products Page as a customer"](https://github.com/rosanna-z/LHL_jungle-rails/blob/master/docs/User-View%20Products.jpg?raw=true)
 
-!["View My Cart page as a customer"]()
+!["View My Cart page as a customer"](https://github.com/rosanna-z/LHL_jungle-rails/blob/master/docs/User-View%20Cart.jpg?raw=true)
 
-!["The Admin page where you can view the products"]()
+!["The Admin page where you can view the products"](https://github.com/rosanna-z/LHL_jungle-rails/blob/master/docs/Admin-Products.jpg?raw=true)
 
 ## Setup
 
