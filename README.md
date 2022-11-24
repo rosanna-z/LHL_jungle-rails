@@ -1,6 +1,18 @@
 # Jungle
 
-A mini e-commerce application built with Rails 6.1 for purposes of teaching Rails by example.
+A mini e-commerce application built with Rails 6.1 for purposes of teaching Rails by example. 
+
+The goal was to fix bugs in existing code, as well as add additional features (sold out badge, enhancing order details page, adding Admin authenication, allowing Admin to create new categories, and creating an About page) to the application. 
+
+RSpec and Cypress was used as a testing tool.
+
+## Screenshots
+
+!["View the Products Page as a customer"]()
+
+!["View My Cart page as a customer"]()
+
+!["The Admin page where you can view the products"]()
 
 ## Setup
 
